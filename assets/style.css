@@ -104,14 +104,33 @@ header {
 }
 
 aside { 
-  box-sizing: border-box;
+  display: flex;
+  text-align: center;
   width: 200px;
   justify-content: center;
+  padding: 100px 100px 100px 1000px;
+
 }
+aside img {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 200px;
+}
+
+aside img:hover {
+  box-shadow: 5px 5px var(--dark);
+}
+
 #project1 {
   box-sizing: border-box;
   width: 200px;
   justify-content: center;
+}
+
+.classProjects img:focus {
+  outline: solid;
+  border-color: var(--dark);
 }
 .contact {
   display: flex;
