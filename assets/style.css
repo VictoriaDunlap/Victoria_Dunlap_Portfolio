@@ -6,50 +6,140 @@
     --lightText: #A3C9A8;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 h1 {
     display: flex;
     justify-content: center;
     font-family: "Brush Script MT", Arial, Helvetica, sans-serif ;
-    background-color: var(--dark);
+}
+
+#PFP {
+  border-radius: 50%;
+  text-align:center;
+  display:block;
+  margin:auto;
+  padding: 10px;
 }
 
 body { 
-    display: flex;
-    flex-flow: column wrap;
-    margin: 0;
-    background-color: var(--light);
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
 }
 
-header { 
-    background-color: var(--light);
-}
 nav {
-    display: flex;
-    background-color: var(--dark);
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
-    width: 250px;
-    margin: 0 .5%;
-    font-size: 200%;
-    color: var(--darkText);
-    background-color: var(--light);
-    border: 3px solid var(--mid);
-    border-radius: 25px;
-  }
+  width: 250px;
+  margin: 0 .5%;
+  font-size: 200%;
+  color: var(--darkText);
+  background-color: var(--light);
+  border: 3px solid var(--mid);
+  border-radius: 25px;
+}
 
-  button:hover {
-    background-color: var(--mid);
-    color: var(--light);
-  }
+button:hover {
+  background-color: var(--mid);
+  color: var(--light);
+}
   
-  button:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px var(--lightText) inset;
-  }
+button:active {
+  font-size: 180%;
+  box-shadow: 0 0 10px var(--lightText) inset;
+}
   
-  button:focus {
-    outline: none;
-    border-color: var(--dark);
+button:focus {
+  outline: none;
+  border-color: var(--dark);
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: var(--darkText);
+}
+
+p {
+  background-color: var(--mid);
+  width: 75%;
+  display: inline-block;
+  margin: 20px;
+  word-wrap: normal;
+  border-style: solid;
+  border-color: var(--dark);
+}
+
+.classProjects {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.classProjects img {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 200px;
+}
+
+.classProjects img:hover {
+  box-shadow: 5px 5px var(--dark);
+}
+
+aside { 
+  box-sizing: border-box;
+  width: 200px;
+  justify-content: center;
+}
+#project1 {
+  box-sizing: border-box;
+  width: 200px;
+  justify-content: center;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+#Contact {
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .classProjects {
+    width: 50%;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .classProjects {
+    width: 100%;
+  }
+}
