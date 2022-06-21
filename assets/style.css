@@ -1,0 +1,55 @@
+:root { 
+    --dark: #50808E;
+    --mid: #84B59F;
+    --light: #DDD8C4;
+    --darkText: #69A297;
+    --lightText: #A3C9A8;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Brush Script MT", Arial, Helvetica, sans-serif ;
+    background-color: var(--dark);
+}
+
+body { 
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    background-color: var(--light);
+}
+
+header { 
+    background-color: var(--light);
+}
+nav {
+    display: flex;
+    background-color: var(--dark);
+    justify-content: space-around;
+}
+
+button {
+    width: 250px;
+    margin: 0 .5%;
+    font-size: 200%;
+    color: var(--darkText);
+    background-color: var(--light);
+    border: 3px solid var(--mid);
+    border-radius: 25px;
+  }
+
+  button:hover {
+    background-color: var(--mid);
+    color: var(--light);
+  }
+  
+  button:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px var(--lightText) inset;
+  }
+  
+  button:focus {
+    outline: none;
+    border-color: var(--dark);
+  }
